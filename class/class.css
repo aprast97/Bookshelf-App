@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #be08a0;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #be08a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #be08a0;
+  }
+  
+  #bookFormSubmit span {
+    font-weight: bold;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  #incompleteBookList,
+  #completeBookList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  [data-testid="bookItem"] {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  [data-testid="bookItem"]:hover {
+    transform: translateY(-5px);
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  button[data-testid="bookItemIsCompleteButton"],
+  button[data-testid="bookItemDeleteButton"],
+  button[data-testid="bookItemEditButton"] {
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+  
+  button[data-testid="bookItemIsCompleteButton"] {
+    background-color: #17aa1c;
+    color: white;
+  }
+  
+  button[data-testid="bookItemDeleteButton"] {
+    background-color: #c91010;
+    color: white;
+  }
+  
+  button[data-testid="bookItemEditButton"] {
+    background-color: #dd8c12;
+    color: white;
+  }
+  
+  button[data-testid="bookItemIsCompleteButton"]:hover,
+  button[data-testid="bookItemDeleteButton"]:hover,
+  button[data-testid="bookItemEditButton"]:hover {
+    opacity: 0.8;
+  }
+  
